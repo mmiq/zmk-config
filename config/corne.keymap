@@ -21,26 +21,6 @@
 */
 
 / {    
-	behaviors {
-	lang: win_space {
-		compatible = "zmk,behavior-mod-morph";
-		label = "WIN SPACE";
-		#binding-cells = <0>;
-		bindings = <&kp SPACE>;
-		mods = <(MOD_LGUI)>;
-		//mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
-		};
-/*	pass: password {
-		compatible = "zmk,behavior-mod-morph";
-		label = "Audit";
-		#binding-cells = <0>;
-		bindings = <&kp a>, <&kp GRAVE>;
-		//mods = <(MOD_LGUI)>;
-		};
-*/	
-	};
-
-// {
  	keymap {
    	compatible = "zmk,keymap";
 			layer_0 {
@@ -78,7 +58,7 @@
 	bindings = <
 	&none	&kp ESC	&kp N1	&kp N2	&kp N3	&kp EQUAL		&kp PG_UP	&kp HOME	&kp UP  	&kp END  	&kp BSPC &none
 	&none	&kp TAB  &kp N4	&kp N5	&kp N6	&kp MINUS		&kp PG_DN	&kp LEFT	&kp DOWN &kp RIGHT	&kp RET 	&none
-	&none	&trans	&kp N7	&kp N8	&kp N9	&kp N0			&kp M			&sk LWIN	&lang   	&kp INS  	&kp DEL 	&none
+	&none	&trans	&kp N7	&kp N8	&kp N9	&kp N0			&kp M			&sk LWIN	&kp F   	&kp INS  	&kp DEL 	&none
 									&trans	&trans	&trans			&mo 3		&trans	&trans
 					>;
 		};
