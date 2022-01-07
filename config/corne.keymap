@@ -90,7 +90,7 @@
 	bindings = <
 	&none	&bt BT_CLR 	&bt BT_SEL 1	&bt BT_SEL 2	&bt BT_SEL 3	&kp EQUAL		&kp PG_UP	&kp HOME	&kp UP  	&kp END  	&bootloader &none
 	&none	&bt BT_NXT 	&bt BT_SEL 4	&bt BT_SEL 5	&bt BT_SEL 6	&kp MINUS		&kp PG_DN	&kp LEFT	&kp DOWN &kp RIGHT	&reset 	&none
-	&none	&trans 		&bt BT_SEL 7	&bt BT_SEL 8	&bt BT_SEL 9	&bt BT_SEL 0	&kp M			&kp LWIN	&kp R   	&kp INS  	&ext_power EP_TOG	&none
+	&none	&trans 		&bt BT_SEL 7	&bt BT_SEL 8	&bt BT_SEL 9	&bt BT_SEL 0	&kp M			&kp LWIN	&kp R   	&kp INS  	/*&ext_power EP_TOG*/	&trans &none
 									&trans	&trans	&trans										&trans		&trans	&trans
 					>;
 		};
