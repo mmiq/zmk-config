@@ -14,18 +14,12 @@
 #define RSE 2
 #define ADJ 3
 
-&lt {
-    quick-tap-ms = <200>;
-};
+&lt { quick-tap-ms = <200>; };
 
-&mt {
-    quick-tap-ms = <200>;
-};
+&mt { quick-tap-ms = <200>; };
 
 / {
-    combos {
-        compatible = "zmk,combos";
-    };
+    combos { compatible = "zmk,combos"; };
 
     macros {
         secret: secret {
@@ -34,14 +28,14 @@
             #binding-cells = <0>;
             bindings = <&none &kp LS(M) &kp A &kp K &kp E &kp SPACE &kp R &kp T &kp SPACE &kp G &kp R &kp E &kp A &kp T &kp SPACE &kp A &kp G &kp A &kp I &kp N &kp EXCL>;
         };
+
         ruHASH: ruHASH {
             compatible = "zmk,behavior-macro";
             label = "RUHASH";
             #binding-cells = <0>;
-            bindings =
-                <&kp LG(SPACE) &kp HASH &kp LG(SPACE)>,
-                <&macro_press>;
+            bindings = <&kp LG(SPACE) &kp HASH &kp LG(SPACE)>, <&macro_press>;
         };
+
         ruAT: ruAT {
             compatible = "zmk,behavior-macro";
             label = "RUAT";
@@ -76,10 +70,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&trans  &mt LEFT_GUI F12  &kp F1           &kp F2        &kp F3        &kp F4        &kp F5        &kp F6        &kp F7         &kp F8        &kp F9                &kp F10                &mt RIGHT_GUI F11  &trans
-        &mt LCTRL EQUAL   &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_7   &kp NUMBER_8  &kp NUMBER_9          &kp NUMBER_0           &mt RCTRL MINUS
-        &mt LALT PLUS     &kp EXCLAMATION  &kp AT_SIGN   &kp HASH      &kp DOLLAR    &kp PERCENT   &kp CARET     &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE
-                                                         &lt 3 TAB     &trans        &kp ESCAPE    &kp ENTER     &trans         &lt 3 DELETE
+&trans  &mt LEFT_GUI F12  &kp F1           &kp F2       &kp F3     &kp F4        &kp F5       &kp F6     &kp F7         &kp F8        &kp F9                &kp F10                &mt RIGHT_GUI F11  &trans
+        &mt LCTRL PLUS    &kp EXCLAMATION  &kp AT_SIGN  &kp HASH   &kp DOLLAR    &kp PERCENT  &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &mt RCTRL MINUS
+        &mt LALT EQUAL    &kp N1           &kp N2       &kp N3     &kp NUMBER_4  &kp N5       &kp N6     &kp N7         &kp N8        &kp N9                &kp N0                 &kp MINUS
+                                                        &lt 3 TAB  &trans        &kp ESCAPE   &kp ENTER  &trans         &lt 3 DELETE
             >;
         };
 
